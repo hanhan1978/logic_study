@@ -7,6 +7,11 @@
  * Demultiplexor:
  * {a, b} = {in, 0} if sel == 0
  *          {0, in} if sel == 1
+    sel    in    a     b
+    0      0     0     0
+    0      1     1     0
+    1      0     0     0
+    1      1     0     1
  */
 
 CHIP DMux {
@@ -15,4 +20,9 @@ CHIP DMux {
 
     PARTS:
     // Put your code here:
+    Nand (a=in, b=sel, out=out1);
+    Nand (a=out1, b=out1, out=b);
+    Nand (a=sel, b=sel, out=out2);
+    Nand (a=out2, b=in, out=out3);
+    Nand (a=out3, b=out3, out=a);
 }
