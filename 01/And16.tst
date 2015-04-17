@@ -3,6 +3,7 @@
 // by Nisan and Schocken, MIT Press.
 // File name: projects/01/And16.tst
 
+load And.hdl,
 load And16.hdl,
 output-file And16.out,
 compare-to And16.cmp,

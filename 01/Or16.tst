@@ -3,6 +3,7 @@
 // by Nisan and Schocken, MIT Press.
 // File name: projects/01/Or16.tst
 
+load Or.hdl,
 load Or16.hdl,
 output-file Or16.out,
 compare-to Or16.cmp,
