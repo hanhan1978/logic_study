@@ -3,6 +3,7 @@
 // by Nisan and Schocken, MIT Press.
 // File name: projects/01/Mux4Way16.tst
 
+load Mux16.hdl,
 load Mux4Way16.hdl,
 output-file Mux4Way16.out,
 compare-to Mux4Way16.cmp,

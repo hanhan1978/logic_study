@@ -3,6 +3,8 @@
 // by Nisan and Schocken, MIT Press.
 // File name: projects/01/DMux8Way.tst
 
+load DMux.hdl,
+load DMux4Way.hdl,
 load DMux8Way.hdl,
 output-file DMux8Way.out,
 compare-to DMux8Way.cmp,

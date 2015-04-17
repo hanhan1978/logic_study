@@ -3,6 +3,7 @@
 // by Nisan and Schocken, MIT Press.
 // File name: projects/01/DMux4Way.tst
 
+load DMux.hdl,
 load DMux4Way.hdl,
 output-file DMux4Way.out,
 compare-to DMux4Way.cmp,
